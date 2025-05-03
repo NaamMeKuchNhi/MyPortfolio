@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My_portfolio_project</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <ul>
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#Skills">Skills & Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="header-text">
+                <h1>Hi, I'm Juhi <span class="typing-text"></span></h1>
+                <p class="tagline">Transforming ideas into digital reality</p> 
+                <!-- claude modification -->
+                
+            </div>
+            
+            
+        </div>
+        <!-- <img src="images/Logo.png" class="logo"> -->
+    </div>
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/first_page_image6.png">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>
+                        From knowing little about engineering in <span>Class 11</span> to securing a place at <span>IIT Patna</span>,
+                        my journey has been nothing short of a miracle—one fueled by <span>persistence, hard work,</span> and an 
+                        insatiable <span>curiosity for learning</span>. 
+                        <br><br>
+                        This mindset has helped me excel academically—<span>topping my school</span> in Class 12, receiving the 
+                        "<span>Student of the Year (2022-23)</span>" award, and <span>emerging as the branch topper</span> at IIT Patna with a 
+                        <span>perfect SPI of 10</span> in the second semester.
+                        <br><br>
+                        I am actively exploring fields like <span>Data Structures & Algorithms (DSA), Web Development,</span> 
+                        and <span>Machine Learning</span>, while honing my coding skills through platforms like 
+                        <span>LeetCode and GFG</span>. I am currently participating in <span>hackathons, tech programs,</span> 
+                        and mentorship initiatives to expand my technical expertise and industry knowledge.
+                        <br><br>
+                        As someone who <span>thrives outside her comfort zone</span>, I strongly believe that the <span>tech industry needs more women innovators and leaders</span>, and I am determined to be one of them!
+                    </p>
+                    
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('Education')">Education</p>
+                        <p class="tab-links" onclick="opentab('Achievements')">Achievements</p>
+                        <p class="tab-links" onclick="opentab('Relevant CourseWork')">Relevant CourseWork</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="Education">
+                        <ul>
+                            <li><span>Indian Institute Of Technology Patna</span><br> Btech. in Computer Science And Engineering  (2023-27)</li>
+                            <li><span>Cathedral Sr.Sec. School</span><br> Upto Class XII  (2009-2023)</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="Achievements">
+                        <ul>
+                            <li><span>Branch Topper</span><br>Secured a perfect SPI of 10 in second semester at IIT Patna.</li>
+                            <li><span>Active participant of Women In Tech Programs</span><br>Finalist (Top 150 out of 5000+) in the NXP Women in Tech (WIT) Program 2024.</li>
+                            <li><span>Was recognised with the title of </span><br>"Student Of The Year 2023".</li>
+                            <li><span>School Board Topper</span><br>Secured 96% in class XII CBSE board exams.</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="Relevant CourseWork">
+                        <ul>
+                            <li><span>Data Structures And Algorithms</span><br>Gained indepth knowledge of dta structures and algorithms from basic like arrays to advanced like tries. </li>
+                            <li><span>Digital Logic And Computer Organisation && Microarchitecture</span><br> Designed and simulated combinational and sequential circuits using Logisim.
+                                ,executed MIPS programs on the MARS simulator and learning to implement Verilog-based designs on FPGA.</li>
+                                <li><span>Database Management System</span><br>Carry knowledge and keen interest to write SQL Queries.</li>    
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!----------------------skills and Projects-------------------------->
+    <div id="Skills">
+        <div class="container">
+            <h1 class="sub-title">My Skills & Related Projects</h1>
+            <div class="Skills-list">
+                <div>
+                    <box-icon name='code-alt'></box-icon>
+                    <h2>C/C++</h2>
+                    <p>
+                        <ul>
+                            <li>Developed a C-based adventure game with many interactive puzzles.</li>
+                            <li>In C++, designed a two pass assembler emulator for custom ISA.</li>
+                            <li>I also have strong knowledge of Data Structures And Algorithms.</li>
+                        </ul>
+                    </p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <box-icon type='logo' name='html5'></box-icon>
+                    <box-icon type='logo' name='css3'></box-icon>
+                    <box-icon type='logo' name='javascript'></box-icon>
+                    <box-icon type='logo' name='android'></box-icon>
+                    <h2>Web And App development</h2>
+                    <p>
+                        <ul>
+                            <li>Developed a responsive web page for sharing sweet recipes, 
+                                enhancing user engagement through user attractive design.</li>
+                            <li>My portfolio project using HTML,CSS,JavaScript</li>
+                            <li>Working on a finance tracker app using kotlin</li>
+                        </ul>
+
+                    </p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <box-icon type='logo' name='python'></box-icon>
+                    <h2>Machine Learning</h2>
+                    <p>
+                        <ul>
+                            <li>Developed classification and regression models using KNN, Naive Bayes, Decision Trees, Linear Logistic Regression.</li>
+                            <li>Trained ML models on real-world datasets (Iris, Titanic) with 85-95% accuracy</li>
+                        </ul>
+                    </p>
+                    <a href="#">Learn more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- /*------------------------contact-------------------------- -->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class='bx bxl-gmail'></i> <box-icon type='logo' name='gmail'></box-icon>juhisahni07@gmail.com</p>
+                    <p><i class='bx bxs-phone'></i> <box-icon type='solid' name='phone'></box-icon>+91-630-7799-163 </p>
+                    <div class="social-icons">
+                        <a href="https://www.linkedin.com/in/juhi-sahni-66185a298?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BcNUGrqzpTO%2B6PSZkQzjdFw%3D%3D"><box-icon type='logo' name='linkedin-square'></box-icon><i class="bx bxl-linkedin-square"></i></a>
+                        <a href="https://github.com/happylearning07"><box-icon type='logo' name='github'></box-icon><i class="bx bxl-github"></i></a>
+                    </div>
+                   
+                    <div class="button-group">
+                        <a href="images/Juhi_Sahni_Resume_Internship.pdf" download>
+                            <button class="cool-button">Download CV</button>
+                        </a>
+                    </div>
+                    
+                </div>
+                <div class="contact-form">
+                    <form action="https://script.google.com/macros/s/AKfycbz8RhqlXyg-RJawWC9a1T7aht3JsrHKLOGFRnm6afYbAFuKzk4ZyZYUn3PGEK-B8Z0/exec" method="post">
+                        <input type="text" placeholder="Your Name" class="input-field" name="name" required>
+                        <input type="email" placeholder="Your Email" class="input-field" name="email" required>
+                        <textarea placeholder="Your Message" class="textarea-field" name="message" required></textarea>
+                        <button type="submit" class="cool-button">Submit</button>
+                    </form>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+    
+    
+    
+    <script>
+        var tablinks=document.getElementsByClassName("tab-links");
+        var tabcontents=document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+        document.addEventListener("DOMContentLoaded", function () {
+            const textArray = ["a Web Developer.", "a Tech Enthusiast.", "aspiring App Developer.", "a Branch Topper.","a Woman in Tech."];
+            let textIndex = 0;
+            let charIndex = 0;
+            const typingSpeed = 100;
+            const erasingSpeed = 50;
+            const delayBetweenTexts = 1500;
+            const typingElement = document.querySelector(".typing-text");
+
+            function typeText() {
+                if (charIndex < textArray[textIndex].length) {
+                    typingElement.textContent += textArray[textIndex].charAt(charIndex);
+                    charIndex++;
+                    setTimeout(typeText, typingSpeed);
+                } else {
+                    setTimeout(eraseText, delayBetweenTexts);
+                }
+            }
+
+            function eraseText() {
+                if (charIndex > 0) {
+                    typingElement.textContent = textArray[textIndex].substring(0, charIndex - 1);
+                    charIndex--;
+                    setTimeout(eraseText, erasingSpeed);
+                } else {
+                    textIndex = (textIndex + 1) % textArray.length;
+                    setTimeout(typeText, typingSpeed);
+                }
+            }
+
+            // Start the effect after a short delay
+            setTimeout(typeText, 1000);
+        });
+
+
+
+
+
+
+        //modifications for typing part 
+        typingElement.textContent = "";
+        document.addEventListener("DOMContentLoaded", () => {
+            typingElement.textContent = ""; // Set initial empty text
+            setTimeout(typeText, 1000);
+        });
+
+
+    </script>
+  
+</body>
+</html>
