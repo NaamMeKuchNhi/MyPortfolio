@@ -3,14 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My_portfolio_project</title>
+    <title>Juhi | Portfolio</title>
     <link rel="stylesheet" href="styles.css">
     <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+    <link rel="icon" href="Attachements/logo.png" type="image/png">
 </head>
 <body>
+    <canvas id="neural-network-bg"></canvas>
     <div id="header">
         <div class="container">
             <nav>
+                <div class="logo-container">
+                    <img src="Attachements/logo.png" alt="Logo" class="site-logo">
+                </div>
                 <ul>
                     <li><a href="#header">Home</a></li>
                     <li><a href="#about">About</a></li>
@@ -27,13 +32,15 @@
             
             
         </div>
-        <!-- <img src="images/Logo.png" class="logo"> -->
+        <img src="Attachements/Home photo.png" class="home-image">
     </div>
     <div id="about">
         <div class="container">
             <div class="row">
                 <div class="about-col-1">
-                    <img src="images/first_page_image6.png">
+                    <div class="circular-image-container">
+                        <img src="Attachements/1726251356725.jpg" alt="Profile Photo" class="circular-image">
+                    </div>
                 </div>
                 <div class="about-col-2">
                     <h1 class="sub-title">About Me</h1>
@@ -56,9 +63,9 @@
                     
 
                     <div class="tab-titles">
-                        <p class="tab-links active-link" onclick="opentab('Education')">Education</p>
-                        <p class="tab-links" onclick="opentab('Achievements')">Achievements</p>
-                        <p class="tab-links" onclick="opentab('Relevant CourseWork')">Relevant CourseWork</p>
+                        <p class="tab-links active-link" onclick="opentab('Education')"><span>E</span>ducation</p>
+                        <p class="tab-links" onclick="opentab('Achievements')"><span>A</span>chievements</p>
+                        <p class="tab-links" onclick="opentab('Relevant CourseWork')"><span>R</span>elevant CourseWork</p>
                     </div>
                     <div class="tab-contents active-tab" id="Education">
                         <ul>
@@ -101,7 +108,7 @@
                             <li>I also have strong knowledge of Data Structures And Algorithms.</li>
                         </ul>
                     </p>
-                    <a href="#">Learn more</a>
+                    <a href="https://github.com/happylearning07/C_game_project" target="_blank">Learn more</a>
                 </div>
                 <div>
                     <box-icon type='logo' name='html5'></box-icon>
@@ -118,7 +125,7 @@
                         </ul>
 
                     </p>
-                    <a href="#">Learn more</a>
+                    <a href="https://github.com/happylearning07/basic_frontend_project" target="_blank">Learn more</a>
                 </div>
                 <div>
                     <box-icon type='logo' name='python'></box-icon>
@@ -129,7 +136,7 @@
                             <li>Trained ML models on real-world datasets (Iris, Titanic) with 85-95% accuracy</li>
                         </ul>
                     </p>
-                    <a href="#">Learn more</a>
+                    <a href="https://github.com/happylearning07/SuikaAI" target="_blank">Learn more</a>
                 </div>
             </div>
         </div>
@@ -140,15 +147,29 @@
             <div class="row">
                 <div class="contact-left">
                     <h1 class="sub-title">Contact Me</h1>
-                    <p><i class='bx bxl-gmail'></i> <box-icon type='logo' name='gmail'></box-icon>juhisahni07@gmail.com</p>
-                    <p><i class='bx bxs-phone'></i> <box-icon type='solid' name='phone'></box-icon>+91-630-7799-163 </p>
-                    <div class="social-icons">
-                        <a href="https://www.linkedin.com/in/juhi-sahni-66185a298?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BcNUGrqzpTO%2B6PSZkQzjdFw%3D%3D"><box-icon type='logo' name='linkedin-square'></box-icon><i class="bx bxl-linkedin-square"></i></a>
-                        <a href="https://github.com/happylearning07"><box-icon type='logo' name='github'></box-icon><i class="bx bxl-github"></i></a>
+                    <div class="contact-info-container">
+                        <div class="contact-info">
+                            <p>
+                                <img src="Attachements/mail.png" alt="Email" class="contact-icon">
+                                <a href="mailto:juhisahni07@gmail.com">juhisahni07@gmail.com</a>
+                            </p>
+                            <p>
+                                <img src="Attachements/phone.png" alt="Phone" class="contact-icon">
+                                <a href="tel:+916307799163">+91-630-7799-163</a>
+                            </p>
+                        </div>
+                        <div class="social-icons">
+                            <a href="https://www.linkedin.com/in/juhi-sahni-66185a298?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BcNUGrqzpTO%2B6PSZkQzjdFw%3D%3D" target="_blank">
+                                <img src="Attachements/linkedin.png" alt="LinkedIn" class="social-icon">
+                            </a>
+                            <a href="https://github.com/happylearning07" target="_blank">
+                                <img src="Attachements/github.png" alt="GitHub" class="social-icon">
+                            </a>
+                        </div>
                     </div>
                    
                     <div class="button-group">
-                        <a href="images/Juhi_Sahni_Resume_Internship.pdf" download>
+                        <a href="Attachements/Juhi_Sahni_Resume_Internship.pdf" download>
                             <button class="cool-button">Download CV</button>
                         </a>
                     </div>
@@ -159,7 +180,9 @@
                         <input type="text" placeholder="Your Name" class="input-field" name="name" required>
                         <input type="email" placeholder="Your Email" class="input-field" name="email" required>
                         <textarea placeholder="Your Message" class="textarea-field" name="message" required></textarea>
-                        <button type="submit" class="cool-button">Submit</button>
+                        <div class="submit-container">
+                            <button type="submit" class="cool-button">Submit</button>
+                        </div>
                     </form>
                 </div>
                 
@@ -218,10 +241,6 @@
         });
 
 
-
-
-
-
         //modifications for typing part 
         typingElement.textContent = "";
         document.addEventListener("DOMContentLoaded", () => {
@@ -229,8 +248,7 @@
             setTimeout(typeText, 1000);
         });
 
-
     </script>
-  
+    <script src="network.js"></script>
 </body>
 </html>
